@@ -7,12 +7,11 @@
     <title>Document</title>
   </head>
 
-
   <body>
     <header class="header">
-      <button class= "header__image-button " ></button>
+      <button class="header__image-menu"></button>
       <img class="header__trait header__trait_hidden" src="ic/divider.svg" />
-      <img class="header__logo" src="ic/Group.svg" />
+      <img class="header__logo header__medium-logo" src="ic/Group.svg" />
       <img class="header__trait" src="ic/divider.svg" />
       <img class="header__item header__item_hidden" src="ic/call.svg" />
       <img class="header__item header__item_hidden" src="ic/chat.svg" />
@@ -24,11 +23,12 @@
 
     <div class="container">
       <div class="container__title">
-        <div class="container__trait"><img src="ic/highlight.svg" />
+        <div class="container__trait">
+          <img src="ic/highlight.svg" />
           <h1 class="container__title-text">Услуги и сервисы</h1>
         </div>
         <div class="container__title-text_hidden">
-          <div class=" container__logo">
+          <div class="container__logo">
             Оставить заявку <img src="ic/repair.svg" />
           </div>
           <div class="container__logo">
@@ -38,13 +38,27 @@
       </div>
 
       <nav class="slider-container">
-        <button class="slider-container__button button_hover">Ремонтируемые устройства</button>
-        <button class="slider-container__button button_hover">Дополнительные услуги</button>
-        <button class="slider-container__button button_hover">Цены на услуги</button>
-        <button class="slider-container__button button_hover">Ремонтируемые бренды</button>
-        <button class="slider-container__button button_hover">Специальные цены</button>
-        <button class="slider-container__button button_hover">Адреса сервисных центров</button>
-        <button class="slider-container__button button_hover">Специальные цены</button>
+        <button class="slider-container__button button_hover">
+          Ремонтируемые устройства
+        </button>
+        <button class="slider-container__button button_hover">
+          Дополнительные услуги
+        </button>
+        <button class="slider-container__button button_hover">
+          Цены на услуги
+        </button>
+        <button class="slider-container__button button_hover">
+          Ремонтируемые бренды
+        </button>
+        <button class="slider-container__button button_hover">
+          Специальные цены
+        </button>
+        <button class="slider-container__button button_hover">
+          Адреса сервисных центров
+        </button>
+        <button class="slider-container__button button_hover">
+          Специальные цены
+        </button>
       </nav>
 
       <main class="container__main">
@@ -73,5 +87,47 @@
         <img class="container__pic" src="ic/Picture Copy.svg" />
       </main>
     </div>
+
+    <div class="menu">
+      <div class="menu__mobile-heder">
+        <div class="menu__items">
+          <button class="cross"></button>
+          <img class="header__logo menu__logo" src="ic/Group.svg" />
+        </div>
+        <button class="search"></button>
+      </div>
+      <div class="menu__list">
+        <ul>
+          <li class="menu_first-list"> <img class="menu__trait" src="ic/highlight.svg" />Ремонт техники </li>
+          <li class="element-list">Услуги и сервисы</li>
+          <li class="element-list">Корпоративным клиент</li>
+          <li class="element-list">Продавцам техники</li>
+          <li class="element-list">Партнерам</li>
+          <li class="element-list">Производителям</li>
+          <li class="element-list">Наши сервисные центр</li>
+          <li class="element-list">Контакты</li>
+        </ul>
+        <div>
+          <div >
+        <div class="menu__contacts-buttons">
+          <button class="call call-hover"></button>
+          <button class="chat chat-hover"></button>
+          <button class="profile profile-hover"></button>
+    
+        </div>
+        <div class="menu__feedback">mail@cps.com</div>
+        <div class="menu__number"> 8 800 890 8900</div>
+      </div>
+        <div >
+          <button class="menu__text-footer" >RU</button>
+          <button class="menu__text-footer">EN</button>
+          <button class="menu__text-footer">CH</button>
+        
+        </div>
+      </div>
+      </div>
+     
+    </div>
+    
   </body>
 </html>
