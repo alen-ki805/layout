@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
 @font-face {
@@ -65,10 +64,9 @@ body {
   background-size: cover;
 }
 
-.header__image-menu:hover{
+.header__image-menu:hover {
   box-shadow: 0px -1px 22px rgba(0, 0, 0, 0.29);
   background-image: url("ic/burger-hover.svg");
-
 }
 
 .header__item {
@@ -162,13 +160,14 @@ body {
 }
 /* Начинается 2 макет*/
 .menu {
-  display: flex;
+  position: absolute;
+  display: none;
+  top: 0px;
   flex-direction: column;
   width: 320px;
-  height: 100vh;;
-  background-color: #f5ecec;
+  height: 100vh;
+  background-color: #f8f8f8;
 }
-
 
 .menu__mobile-heder {
   padding: 23px 24px 0px;
@@ -189,17 +188,54 @@ body {
   padding: 24px 20px 32px 24px;
   width: 222px;
   flex: 1;
-  
 }
 
-.menu_first-list {
-  color: #7e7e82;
+.menu_element-list {
   display: flex;
   align-items: center;
   padding: 10px 0px;
-  
-  
+  cursor: pointer;
 }
+
+.brands_background {
+  height: 196px;
+  background-color: #f8f8f8;
+}
+.brands-header {
+  padding: 16px;
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: lighter;
+  background: linear-gradient(to right, #f8f8f8, rgb(255, 255, 255));
+  border-top: 1px solid #d9fff5;
+}
+
+/* Слайдер */
+
+.swiper {
+  margin-top: 16px;
+  margin-left: 16px;
+  height: 110px;
+}
+
+
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 240px;
+  height: 72px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+
+
+
+
+/*  */
+
 .menu__logo {
   margin-left: 16px;
   align-items: center;
@@ -208,7 +244,17 @@ body {
 .menu__trait {
   position: absolute;
   left: 1px;
+  display: none;
 }
+
+.menu_element-list:hover {
+  color: #7e7e82;
+}
+
+.menu_element-list:hover .menu__trait {
+  display: block;
+}
+
 .element-list {
   padding: 10px 0px;
 }
@@ -248,12 +294,9 @@ body {
   border: none;
   background-image: url("ic/call.svg");
   background-color: white;
-  
 }
 
-
-
-.menu__contacts-buttons{
+.menu__contacts-buttons {
   display: flex;
   gap: 16px;
   margin-top: 10px;
@@ -315,16 +358,6 @@ body {
 li {
   list-style-type: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 760px) {
   .header__trait {
@@ -394,6 +427,9 @@ li {
     width: 50%;
   }
 }
+
+/* слайдер */
+
 
 @media (min-width: 1120px) {
   .header {
