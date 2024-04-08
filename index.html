@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,6 @@
   </head>
 
   <body>
-    
     <header class="header">
       <button class="header__image-menu" id="button-menu"></button>
       <img class="header__trait header__trait_hidden" src="ic/divider.svg" />
@@ -65,9 +65,7 @@
           Специальные цены
         </button>
       </nav>
-      
 
-    
       <main class="container__main">
         <div class="container__main-small">
           <p class="container__main-text">
@@ -92,33 +90,61 @@
         </div>
 
         <img class="container__pic" src="ic/Picture Copy.svg" />
-        
       </main>
-      
     </div>
 
-<div class="brands_background">
-    <h2 class = "brands-header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="ic/Bitmap.svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide"><img src="ic/Bitmap1.svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide"><img src="ic/Bitmap (1).svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide"><img src="ic/Bitmap (2).svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide"><img src="ic/Bitmap (3).svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide"><img src="ic/Bitmap (4).svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide "><img src="ic/Bitmap(5).svg"><img src="ic/go.svg"></div>
-    <div class="swiper-slide "><img src="ic/Bitmap (6).svg"><img src="ic/go.svg"></div>
-  </div>
-  <div class="swiper-pagination "></div>
-</div>
-  </div>
- 
+    <div class="brands_background">
+      <h2 class="brands-header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="ic/Bitmap.svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap1.svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap (1).svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap (2).svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap (3).svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap (4).svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide" id="BrandSonic">
+            <img src="ic/Bitmap(5).svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide" id="BrandSony">
+            <img src="ic/Bitmap (6).svg" /><img src="ic/go.svg" />
+          </div>
+        </div>
+        <div class="hidden-slide" id="hidden-slide">
+          <div class="swiper-slide">
+            <img src="ic/Bitmap.svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap1.svg" /><img src="ic/go.svg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="ic/Bitmap (1).svg" /><img src="ic/go.svg" />
+          </div>
+        </div>
 
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="show-all_button" id="ShowAll">
+        <img src="ic/icon.svg" />Показать все
+      </button>
+      <button class="hide-button" id="HideButton">
+        <img src="ic/arrowTop.svg" />Скрыть
+      </button>
+    </div>
 
-
-
-    <div id="menu" class="menu " >
+    <div id="menu" class="menu">
       <div class="menu__mobile-heder">
         <div class="menu__items">
           <button class="cross" id="hideMenu"></button>
@@ -128,44 +154,52 @@
       </div>
       <div class="menu__list">
         <ul>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Ремонт техники </li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Услуги и сервисы</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Корпоративным клиент</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Продавцам техники</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Партнерам</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Производителям</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Наши сервисные центр</li>
-          <li class="menu_element-list"> <img class="menu__trait" src="ic/highlight.svg" />Контакты</li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Ремонт техники
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Услуги и сервисы
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Корпоративным
+            клиент
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Продавцам техники
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Партнерам
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Производителям
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Наши сервисные
+            центр
+          </li>
+          <li class="menu_element-list">
+            <img class="menu__trait" src="ic/highlight.svg" />Контакты
+          </li>
         </ul>
         <div>
-          <div >
-        <div class="menu__contacts-buttons">
-          <button class="call call-hover"></button>
-          <button class="chat chat-hover"></button>
-          <button class="profile profile-hover"></button>
-    
+          <div>
+            <div class="menu__contacts-buttons">
+              <button class="call call-hover"></button>
+              <button class="chat chat-hover"></button>
+              <button class="profile profile-hover"></button>
+            </div>
+            <div class="menu__feedback">mail@cps.com</div>
+            <div class="menu__number">8 800 890 8900</div>
+          </div>
+          <div>
+            <button class="menu__text-footer">RU</button>
+            <button class="menu__text-footer">EN</button>
+            <button class="menu__text-footer">CH</button>
+          </div>
         </div>
-        <div class="menu__feedback">mail@cps.com</div>
-        <div class="menu__number"> 8 800 890 8900</div>
       </div>
-        <div >
-          <button class="menu__text-footer" >RU</button>
-          <button class="menu__text-footer">EN</button>
-          <button class="menu__text-footer">CH</button>
-        
-        </div>
-      </div>
-      </div>
-      
     </div>
-    
-    
-   
+
     <script src="qw.js"></script>
-
-
-
-
-    
   </body>
 </html>
